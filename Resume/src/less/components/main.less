@@ -1,0 +1,74 @@
+@title-height: 50px;
+section{
+	margin-bottom: @padding-huge-vertical*2;
+	h2{
+		min-height: @title-height;
+		line-height: @title-height;
+	}
+	dl{
+		padding-left: @padding-base-horizontal + @font-size-huge;
+	}
+	dt{
+		padding-bottom: @padding-large-vertical;
+		font-size: @font-size-h4;
+		font-weight: bold;
+	}
+	dd{
+		padding-top: @padding-base-vertical;
+		padding-bottom: @padding-base-vertical;
+	}
+}
+.skill-main em{
+	display: inline-block;
+	padding: @padding-xs-vertical @padding-xs-horizontal;
+	margin-bottom: @padding-small-vertical;
+	margin-right: @padding-base-horizontal;
+	background-color: @theme-color;
+	color: @white;
+	border-radius: @border-radius-large;
+}
+.timeline{
+    margin-left: (@font-size-huge - @timeline-line-width)/2;
+    border-left: @timeline-line-width solid @theme-color;
+}
+.timeline-item{
+    padding-bottom: @padding-huge-vertical;
+}
+
+.set-timeline-item-icon(@icon-diandian);
+
+.timeline-title {
+    .float-container();
+    h4{
+        float: left;
+    }
+}
+.detail-link{
+    float: right;
+    a{
+    	font-size: @font-size-small;
+    	font-weight: 100;
+    	padding: @padding-xs-vertical @padding-xs-horizontal;
+        color: @theme-color;
+        border: 1px solid @theme-color;
+        border-radius: @border-radius-large;
+    }
+}
+.project{
+	dl{
+		padding-left: @padding-base-horizontal + @font-size-huge - (@font-size-huge/2);
+	}
+}
+time{
+	padding-left: @padding-base-horizontal;
+	float: right;
+	font-weight: 100;
+}
+.set-title-icon(education,@icon-jiaoyujingli);
+.set-title-icon(skill-main,@icon-xiangguanjineng2);
+.set-title-icon(project,@icon-xiangmu);
+.set-title-icon(school-exp,@icon-xiaoyuanjingli);
+.set-title-icon(hobby-main,@icon-xingqu2);
+
+.set-item-icon(@icon-xingxing1);
+.set-link-icon(@icon-lianjie);

@@ -1,0 +1,85 @@
+// ======= shadow
+@light-shadow: 3px 3px 9px rgba(0, 0, 0, 0.2);
+
+//======= font
+@font-family-screen: Arial, Helvetica, SimSun, sans-serif;
+@font-family-print-title:  Calibri, SimHei, serif; //中文标题为黑体
+@font-family-print-text:  Calibri, STXihei, serif; //中文正文为华文细黑
+
+@font-size-base:  16px;
+@font-size-huge: @font-size-base * 2.5;
+@font-size-large: @font-size-base * 1.75;
+@font-size-medium: @font-size-base * 1.25;
+@font-size-small: @font-size-base * 0.875;
+
+@font-size-h1:    @font-size-base * 2.5; //40px
+@font-size-h2:    @font-size-base * 1.5; //24px
+@font-size-h3:    @font-size-base * 1.25; //20px
+@font-size-h4:    @font-size-base * 1.125;//18px
+@font-size-h5:    @font-size-base;
+@font-size-h6:    @font-size-base * 0.875; // 14px
+
+//======= line-height
+@line-height-base: 1.5; 
+
+//======= icons
+@iconfont-path:       "../../fonts";
+
+//======= Media queries breakpoints
+// --------------------------------------------------
+// small screen / tablet
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+// medium screen / desktop
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+// large screen / wide desktop
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+// media queries don't overlap when required, provide a maximum
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+
+////======= container sizes
+// small screen / tablet
+@container-tablet: ((720px + @padding-gutter-width));
+@container-sm: @container-tablet;
+// medium screen / desktop
+@container-desktop: ((940px + @padding-gutter-width));
+@container-md: @container-desktop;
+// large screen / wide desktop
+@container-large-desktop: ((1000px + @padding-gutter-width));
+@container-lg: @container-large-desktop;
+
+//====== padding
+@padding-base-vertical: 6px;
+@padding-base-horizontal: 12px;
+
+@padding-large-vertical: 10px;
+@padding-large-horizontal: 16px;
+
+@padding-huge-vertical: 16px;
+@padding-huge-horizontal: 24px;
+
+@padding-small-vertical: 5px;
+@padding-small-horizontal: 10px;
+
+@padding-xs-vertical: 2px;
+@padding-xs-horizontal: 5px;
+
+@padding-gutter-width: 30px;
+
+////======= border
+@border-radius-base: 4px;
+@border-radius-large: 6px;
+@border-radius-small: 3px;
+@border-radius-huge: 10px;
+@border-radius-circle: 100%;
+
+//== timeline
+@timeline-line-width: 4px;

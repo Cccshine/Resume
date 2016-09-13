@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: @padding-large-vertical;
+  .float-container();
+}
+
+.column {
+  padding: @padding-gutter-width;
+}
+
+.side-bar{
+  width: 30%;
+}
+.main{
+  width: 70%;
+  float: right;//side-bar需要利用position:absolute来实现与父级container等高，所以main右浮动
+}
+footer{
+  margin-top: @padding-large-vertical;
+  text-align: center;
+}
+.float-container() {
+    overflow-y: hidden;
+    zoom: 1;
+}
