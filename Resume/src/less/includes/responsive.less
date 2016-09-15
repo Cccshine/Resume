@@ -135,6 +135,7 @@
 @media print {
   .container {
     width: 1000px;
+    height: 1415px;
     margin-top: 0;
     box-shadow: none;
   }
@@ -145,10 +146,24 @@
   h1,h2,h3,h4{
     font-family: @font-family-print-title;
   }
+  section{
+    // margin-bottom: @padding-huge-vertical;
+    dt{
+      padding-bottom: @padding-base-vertical;
+    }
+    dd{
+      padding-top: @padding-small-vertical;
+      padding-bottom: @padding-small-vertical;
+    }
+  }
+  .qrcode{
+    bottom:  @padding-gutter-width + @padding-huge-vertical;
+  }
   .detail-link a{
     &::before{
       display: none;
     }
+    font-size: @font-size-h4;
     border: none;
   }
 }

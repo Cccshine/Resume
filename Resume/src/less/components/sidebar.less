@@ -1,4 +1,4 @@
-@avatar-size:100px;
+@avatar-size:120px;
 @qrcode-size:150px;
 .container{
 	position: relative;
@@ -32,7 +32,7 @@
 }
 .pers-info dt{
 	font-size: @font-size-h3;
-	margin-bottom: @padding-base-vertical;
+	margin-bottom: @padding-base-vertical*2;
 	font-weight: bold;
 }
 .pers-info dd{
@@ -57,12 +57,15 @@
 .qrcode{
 	text-align: center;
 	position: absolute;
-	bottom:  @padding-gutter-width;
+	bottom:  @padding-gutter-width + @padding-huge-vertical*2;
 	.horizontal-middle();
 	img{
 		width: @qrcode-size;
 		height: @qrcode-size;
 	}
+}
+.pers-info .qrcode{
+	margin: 0;
 }
 .set-dt-icon(apply,@icon-qiuzhiyixiang);
 .set-dt-icon(contact,@icon-lianxi);
