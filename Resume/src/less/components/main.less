@@ -16,6 +16,7 @@ section{
 	dd{
 		padding-top: @padding-base-vertical;
 		padding-bottom: @padding-base-vertical;
+		clear:both;
 	}
 }
 .skill-main em{
@@ -28,6 +29,7 @@ section{
 	border-radius: @border-radius-large;
 }
 .timeline{
+	margin-top: floor((@font-size-h4*1.5 - @font-size-h4)/2);
     margin-left: (@font-size-huge - @timeline-line-width)/2;
     border-left: @timeline-line-width solid @theme-color;
 }
@@ -38,9 +40,9 @@ section{
 .set-timeline-item-icon(@icon-diandian);
 
 .timeline-title {
-    .float-container();
     h4{
         float: left;
+        margin-top: ceil((@font-size-h4 - @font-size-h4*1.5)/2);
     }
 }
 .detail-link{
@@ -53,6 +55,7 @@ section{
         border: 1px solid @theme-color;
         border-radius: @border-radius-large;
     }
+    margin-top: ceil((@font-size-h4 - @font-size-h4*1.5)/2);
 }
 .project{
 	dl{
