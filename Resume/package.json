@@ -20,12 +20,13 @@
   },
   "homepage": "https://github.com/Cccshine/Resume#readme",
   "devDependencies": {
-    "browser-sync": "^2.15.0",
+    "browser-sync": "^2.24.5",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-less": "^3.1.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2"
+    "gulp-less": "^3.5.0",
+    "gulp-rename": "^1.3.0",
+    "use": "^3.1.0"
   }
 }

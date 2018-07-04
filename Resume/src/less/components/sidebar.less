@@ -42,12 +42,16 @@
 }
 .contact-info{
 	margin-right: -@font-size-large + @padding-xs-horizontal;
+	dd{
+		word-wrap: break-word;
+	}
 }
+
 .skill-side em{
 	display: inline-block;
-	padding: @padding-xs-vertical @padding-small-horizontal;
-	margin-bottom: @padding-small-vertical;
-	margin-right: @padding-base-horizontal;
+	padding: 0 @padding-small-horizontal;
+	margin-bottom: @padding-base-vertical;
+	margin-right: @padding-small-horizontal;
 	font-size: @font-size-small;
 	font-weight: bold;
 	color: @theme-color;
@@ -68,14 +72,15 @@
 	margin: 0;
 }
 .set-dt-icon(apply,@icon-qiuzhiyixiang);
-.set-dt-icon(contact,@icon-lianxi);
-.set-dt-icon(tech,@icon-xiangguanjineng);
+.set-dt-icon(contact,@icon-lianxifangshi);
+.set-dt-icon(tech,@icon-jinengbiaoqian);
+.set-dt-icon(education,@icon-jiaoyubeijing);
 .set-dt-icon(hobby-side,@icon-xingquaihao);
 
-.set-dd-icon(tel,@icon-dianhua);
+.set-dd-icon(tel,@icon-shouji);
 .set-dd-icon(email,@icon-youxiang);
 .set-dd-icon(weixin,@icon-weixin);
-.set-dd-icon(blog,@icon-rss);
+.set-dd-icon(blog,@icon-boke);
 .set-dd-icon(github,@icon-github);
-.set-dd-icon(dribbble,@icon-dribbble);
-.set-dd-icon(instrument,@icon-yueqi);
+// .set-dd-icon(dribbble,@icon-dribbble);
+// .set-dd-icon(instrument,@icon-yueqi);

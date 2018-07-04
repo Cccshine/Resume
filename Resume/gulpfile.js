@@ -2,7 +2,7 @@
 var gulp         = require('gulp');
 //引入组件
 var autoprefixer = require('gulp-autoprefixer');
-var minifyCSS    = require('gulp-minify-css');
+var cleanCSS    = require('gulp-clean-css');
 var less         = require('gulp-less');
 var rename       = require('gulp-rename');
 var browserSync  = require('browser-sync').create();
@@ -29,7 +29,7 @@ gulp.task('compressCSS',function(){
             cascade: true,
             remove:true
         }))
-        .pipe(minifyCSS())
+        .pipe(cleanCSS())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('dist/css'))
         .pipe(reload({stream: true}));
