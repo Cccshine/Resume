@@ -1,5 +1,5 @@
 # Resume
-在线查看：[http://www.caojiacong.cn](http://www.caojiacong.cn)
+[在线查看](https://cccshine.github.io/Resume/Resume/index.html)
 
 ## Introduction
 * 语义化良好的静态简约简历

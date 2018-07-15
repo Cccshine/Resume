@@ -1,12 +1,22 @@
 @title-height: 50px;
+@sub-title-height: 30px;
 section{
 	margin-bottom: @padding-huge-vertical*2;
 	h2{
 		min-height: @title-height;
 		line-height: @title-height;
 	}
-	dl{
+	h3{
+		min-height: @sub-title-height;
+		line-height: @sub-title-height;
+		margin-bottom: @padding-base-vertical;
+	}
+	.info-list{
 		padding-left: @padding-base-horizontal + @font-size-huge;
+		margin-bottom: @padding-base-vertical;
+	}
+	dl{
+		padding-left: @padding-base-horizontal + @font-size-huge - (@font-size-huge/2);
 	}
 	dt{
 		padding-bottom: @padding-large-vertical;
@@ -34,7 +44,14 @@ section{
     border-left: @timeline-line-width solid @theme-color;
 }
 .timeline-item{
-    padding-bottom: @padding-huge-vertical;
+	padding-bottom: @padding-huge-vertical;
+	h5{
+		float: left;
+	}
+	p{
+		clear: both;
+		margin: 0;
+	}
 }
 
 .set-timeline-item-icon(@icon-diandian);
@@ -57,19 +74,16 @@ section{
     }
     margin-top: ceil((@font-size-h4 - @font-size-h4*1.5)/2);
 }
-.project{
-	dl{
-		padding-left: @padding-base-horizontal + @font-size-huge - (@font-size-huge/2);
-	}
-}
 time{
 	padding-left: @padding-base-horizontal;
 	float: right;
 	font-weight: 100;
 }
-.set-title-icon(education,@icon-jiaoyubeijing);
-.set-title-icon(skill-main,@icon-jinengbiaoqian);
-.set-title-icon(project,@icon-gongzuojingli);
+.set-title-icon(education-main,@icon-jiaoyubeijing-main);
+.set-title-icon(skill-main,@icon-jinengbiaoqian-main);
+.set-title-icon(work,@icon-gongzuojingli);
+.set-title-icon(project,@icon-xiangmu);
+.set-sub-title-icon(work,@icon-gongsi);
 // .set-title-icon(school-exp,@icon-xiaoyuanjingli);
 // .set-title-icon(hobby-main,@icon-xingqu2);
 

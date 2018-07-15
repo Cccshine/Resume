@@ -6,7 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="曹嘉聪的个人简历">
     <meta name="keywords" content="曹嘉聪,前端,工作,简历,求职">
-	<link rel="shortcut icon" href="img/favicon.png">
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<style>
+		#avatar,.qrcode img{
+			max-width: 160px;
+			max-height: 160px;
+		}
+		.skill-side em{
+			margin-right: 10px;
+		}
+	</style>
 </head>
 <body>
 	<div class="container">
@@ -25,28 +34,31 @@
 				<li class="basic contact-info">
 					<dl>
 						<dt class="contact">联系方式</dt>
-						<dd class="email"><a href="mailto:caojiacong@126.com" target="_blank">caojiacong@126.com</a></dd>
-						<dd class="weixin">cc_feng_cshine</dd>
-						<dd class="blog"><a href="https://cccshine.github.io" target="_blank">https://cccshine.github.io</a></dd>
-						<dd class="github"><a href="https://github.com/cccshine" target="_blank">https://github.com/cccshine</a></dd>
+						<dd class="tel visible-print">手机：186-6502-2535</dd>
+						<dd class="email"><a href="mailto:caojiacong@126.com" target="_blank">邮箱：caojiacong@126.com</a></dd>
+						<dd class="weixin">微信：cc_feng_cshine</dd>
+						<dd class="blog"><a href="https://segmentfault.com/u/cccshine/articles" target="_blank">博客：https://segmentfault.com/u/cccshine/articles</a></dd>
+						<dd class="github"><a href="https://github.com/cccshine" target="_blank">Github：https://github.com/cccshine</a></dd>
+					</dl>
+				</li>
+				<li class="basic invisible-lt-md">
+					<dl>
+						<dt class="education">教育背景</dt>
+						<dd>湘潭大学(2013.09~2017.06)</dd>
+						<dd>本科/通信工程</dd>
+						<dd>通过大学英语六级</dd>
 					</dl>
 				</li>
 				<li class="skill-side invisible-lt-md">
 					<dl>
 						<dt class="tech">技能标签</dt>
-						<dd><em>JavaScript</em> <em>HTML</em> <em>CSS</em> <em>PHP</em> <em>C</em></dd>
-						<dd><em>jQuery</em></dd>
-						<dd><em>MySQL</em></dd>
+						<dd><em>HTML</em><em>CSS</em><em>JavaScript</em><em>Node.js</em></dd>
+						<dd><em>Less/Sass</em><em>Bootstrap</em><em>jQuery</em><em>React</em><em>Avalon</em></dd>
+						<dd><em>Express</em><em>MongoDB</em></dd>
+						<dd><em>Webpack</em><em>Gulp</em></dd>
 						<dd><em>Photoshop</em></dd>
 					</dl>
 					<i class="visible-lt-md"></i>
-				</li>
-				<li class="basic invisible-lt-md">
-					<dl>
-						<dt class="hobby-side">兴趣爱好</dt>
-						<dd class="blog"><a href="https://cccshine.github.io" target="_blank">博客</a></dd>
-						<dd class="instrument">古筝</dd>
-					</dl>
 				</li>
 				<li class="qrcode invisible-lt-md">
 					<img src="img/qrcode.png" alt="qrcode">
@@ -55,114 +67,129 @@
 			</ul>
 		</aside>
 		<article class="main column">
-			<section class="education">
-				<h2>教育背景</h2>
-				<dl>
-					<dt>湘潭大学 <time>2013.09~2017.06</time></dt>
-					<dd>本科/通信工程</dd>
-					<dd>专业排名：前<mark>5%</mark></dd>
-					<dd>获得湘潭大学校级学年综合<mark>甲等奖学金</mark>、<mark>丙等奖学金</mark></main></dd>
-					<dd>获得湘潭大学<mark>三好学生</mark>荣誉（2次）</dd>
-					<dd>通过大学英语六级</dd>
-				</dl>
-			</section>
-			<section class="project">
-				<h2>实习与作品</h2>
+			<section class="work">
+				<h2>工作经历</h2>
+				<h3>高新兴科技集团股份有限公司<time>2016.11~2018.6.29</time></h3>
+				<ul class="info-list">
+					<li>职位：前端工程师</li>
+					<li>荣誉：2017～2018年度<mark>最佳新人奖</mark></li>
+				</ul>
 				<ul class="timeline">
 					<li class="timeline-item">
 						<dl>
 							<dt class="timeline-title">
-								<h4>湖南创博龙智信息科技股份有限公司<time>2016.07</time></h4>
+								<h4>执法视音频一体化管理平台</h4>
 							</dt>
-							<dd>安卓开发实习生</dd>
-							<dd>在没有接触过安卓开发及Java的情况下，通过几天的培训及导师的帮助制作完成一个脸萌APP</dd>
-							<dd>编程的思想是相通的，安卓开发的一些布局思想也与web端的页面布局的思想很相近，所以制作过程中通过<mark>类比知识</mark>的方法，比较顺利的完成了小项目</dd>
+							<dd>该平台融合执法视音频数据和执法业务数据后进行统一管理，包含执法设备管理、文件上传、视频监控、录像回放、地图实时指挥等功能</dd>
+							<dd>采用技术为<mark>ES6+Avalon+jQuery+Bootstrap+fis3</mark>，基本兼容至IE8</dd>
+							<dd>主要负责部分业务模块及公共组件的开发，涉及数据列表渲染、表单处理、多种地图封装操作、实时更新、视频ocx对接、性能优化等内容</dd>
+							<dd>主动开发高复用的组件，如弹窗组件、部门树下拉框组件、分页组件等，提高了团队的工作效率，也使得自己对于代码抽象有了更深的理解</dd>
+							<dd>积极对性能进行优化，比如将一个原先只能加载1000左右数据量的下拉框优化为能加载<mark>万级</mark>数据量的下拉框</dd>
 						</dl>
 					</li>
 					<li class="timeline-item">
 						<dl>
 							<dt class="timeline-title">
-								<h4>Resume<time>2016.09</time></h4>
+								<h4>执法办案精细化管理平台</h4>
+							</dt>
+							<dd>集成办案中心、案管中心、物证中心、执法监督四大板块，对执法办案过程进行监督管理的平台，包含案件管理、物证管理、卷宗审核、生成案件跟踪表、文书模版等功能</dd>
+							<dd>采用技术为<mark>jQuery+Bootstrap+Less+requireJS</mark>，兼容至IE8</dd>
+							<dd>主要负责部分业务模块及部分公共代码的开发，涉及公共布局、文件上传及预览、案件表的显示、编辑及打印、图片批注等内容</dd>
+							<dd>采用面向对象的方式实现公共弹窗、公共提示框等公共模块，提高公共代码的复用性、扩展性和维护性</dd>
+							<dd>积极帮助同事并想办法解决项目中遇到的难题，比如同事在开发案件跟踪表打印功能时遇到了打印后单元格分两页打印，从而导致该单元格无上或下边框的问题；通过与同事一起分析讨论表格的结构及规律后给出了相应的解决方案</dd>
+						</dl>
+					</li>
+				</ul>
+			</section>
+			<section class="project">
+				<h2>个人项目</h2>
+				<ul class="timeline">
+					<li class="timeline-item">
+						<dl>
+							<dt class="timeline-title">
+								<h4>Blog</h4>
 								<span class="detail-link invisible-print">
-									<a href="https://github.com/Cccshine/Resume.git" target="_blank">源代码</a>
-									<a href="https://www.caojiacong.cn" target="_blank">Demo</a>
+									<a href="https://github.com/Cccshine/Blog" target="_blank">源代码</a>
+									<a href="http://www.cshine.xin" target="_blank">Site</a>
+								</span>
+							</dt>
+							<dd>个人博客，包含注册、登陆、找回密码、邮箱验证、新消息推送、可预览markdown编辑器、点赞、收藏、评论、标签云等功能</dd>
+							<dd>采用技术为<mark>Sass+React+Node.js+Express+MongoDB+Webpack</mark>，通过该项目不仅丰富了前端知识还了解了数据库、接口设计等后端知识</dd>
+							<dd>使用pm2部署项目至服务器，使用nginx反向代理进行端口映射</dd>
+						</dl>
+					</li>
+					<li class="timeline-item">
+						<dl>
+							<dt class="timeline-title">
+								<h4>CImage</h4>
+								<span class="detail-link invisible-print">
+									<a href="https://github.com/Cccshine/Clmage" target="_blank">源代码</a>
+									<a href=" https://cccshine.github.io/Clmage/demo/" target="_blank">Demo</a>
+								</span>
+							</dt>
+							<dd>图片裁剪插件，支持宽高比锁定、选区minSize/maxSize设置、选区移动、边角控制、预览裁剪效果等功能，提供参数配置及API接口</dd>
+							<dd>采用技术为<mark>Less+ES6+Webpack</mark>，原生JS编写，无任何依赖</dd>
+							<dd>插件以面向对象方式编写，可扩展性强，使用简单，结合后端程序可快速实现图片裁剪，上述Blog项目使用该插件实现了头像裁剪功能</dd>
+						</dl>
+					</li>
+					<li class="timeline-item">
+						<dl>
+							<dt class="timeline-title">
+								<h4>JavaScript小游戏</h4>
+							</dt>
+							<dd>
+								<h5>2048游戏</h5>
+								<span class="detail-link invisible-print">
+									<a href="https://github.com/Cccshine/2048Game" target="_blank">源代码</a>
+									<a href="  https://cccshine.github.io/2048Game/" target="_blank">Demo</a>
+								</span>
+								<p>原生JS编写，CSS3动画，兼容PC端和移动端</p>
+							</dd>
+							<dd>
+								<h5>贪吃蛇游戏</h5>
+								<span class="detail-link invisible-print">
+									<a href="https://github.com/Cccshine/Gluttonous-Snake" target="_blank">源代码</a>
+									<a href=" https://cccshine.github.io/Gluttonous-Snake/" target="_blank">Demo</a>
+								</span>
+								<p>原生JS编写，Canvas实现游戏画面，兼容PC端和移动端</p>
+							</dd>
+						</dl>
+					</li>
+					<li class="timeline-item invisible-print">
+						<dl>
+							<dt class="timeline-title">
+								<h4>Resume</h4>
+								<span class="detail-link invisible-print">
+									<a href="https://github.com/Cccshine/Resume" target="_blank">源代码</a>
+									<a href="https://cccshine.github.io/Resume/Resume/" target="_blank">Demo</a>
 								</span>
 							</dt>
 							<dd>在线简历，运用<mark>Less</mark>预处理器生成<mark>响应式</mark>样式，适应多种屏幕尺寸及打印设备</dd>
 							<dd>使用<mark>Gulp</mark>改进工作流</dd>
 						</dl>
 					</li>
-					<li class="timeline-item">
+					<li class="timeline-item invisible-print">
 						<dl>
 							<dt class="timeline-title">
-								<h4>天猫商城（仿写）<time>2016.07~2016.08</time></h4>
+								<h4>天猫商城（仿）</h4>
 								<span class="detail-link invisible-print">
-									<a href="https://github.com/Cccshine/tmall.git" target="_blank">源代码</a>
-									<a href="https://www.caojiacong.cn/tmall" target="_blank">Demo</a>
+									<a href="https://github.com/Cccshine/tmall" target="_blank">源代码</a>
+									<a href="https://cccshine.github.io/tmall/tmall/" target="_blank">Demo</a>
 								</span>
 							</dt>
 							<dd>运用HTML+CSS+JavaScript并结合<mark>PHP+MySQL</mark>实现了天猫首页、注册页及登录页，运用<mark>JSONP</mark>跨域调用相关API实现搜索框的智能提示与猜你喜欢模块的动态获取数据，运用<mark>AJAX</mark>向后台发送请求实现注册页与登录页的表单验证</dd>
-							<dd>模块化布局、CSS3与原生JavaScript实现一些特效、采用<mark>面向对象</mark>的方式实现搜索框，制作过程中通过积极查阅相关资料并总结经验，深入了解了一些CSS知识、对JavaScript的<mark>闭包</mark>及<mark>面向对象</mark>有了一些理解</dd>
+							<dd>模块化布局、CSS3与原生JavaScript实现一些特效、采用<mark>面向对象</mark>的方式实现搜索框、基本兼容至IE8，制作过程中通过积极查阅相关资料并总结经验，深入了解了一些CSS知识、对JavaScript的<mark>闭包</mark>及<mark>面向对象</mark>有了一些理解</dd>
 							<dd>该项目推动自己学习PHP及MySQL，并成功的完成了注册、登录及退出的动态网站功能，不仅学习了基础知识而且理解了前台与后台是如何交互的</dd>
 						</dl>
 					</li>
-					<li class="timeline-item">
-						<dl>
-							<dt class="timeline-title">
-								<h4>贪吃蛇游戏<time>2016.08</time></h4>
-								<span class="detail-link invisible-print">
-									<a href="https://github.com/Cccshine/Gluttonous-Snake.git" target="_blank">源代码</a>
-									<a href="https://www.caojiacong.cn/snake" target="_blank">Demo</a>
-								</span>
-							</dt>
-							<dd>运用<mark>Canvas</mark>实现游戏画面、JavaScript实现逻辑关系，含有游戏模式选择、计时计分、开始暂停功能</dd>
-							<dd>通过制作该小游戏熟悉了Canvas的基本用法，之后主动了解了<mark>HTML5</mark>及<mark>CSS3</mark>的新特性</dd>
-						</dl>
-					</li>
-					<li class="timeline-item invisible-print">
-						<dl>
-							<dt class="timeline-title">
-								<h4>电商网站首页<time>2016.06</time></h4>
-								<span class="detail-link invisible-print">
-									<a href="https://github.com/Cccshine/100du.git" target="_blank">源代码</a>
-									<a href="https://www.caojiacong.cn/100du" target="_blank">Demo</a>
-								</span>
-							</dt>
-							<dd>运用模块化布局，<mark>jQuery</mark>实现轮播图，日历等，可兼容至<mark>IE6</mark></dd>
-							<dd>通过制作该页面熟悉了模块化布局的方法以及jQury的基本用法，积累了一些处理兼容性的经验</dd>
-						</dl>
-					</li>
-					<li class="timeline-item invisible-print">
-						<dl>
-							<dt class="timeline-title">
-								<h4>其他练习作品</h4>
-								<span class="detail-link invisible-print">
-									<a href="https://www.caojiacong.cn/exercise" target="_blank">Demo</a>
-								</span>
-							</dt>
-							<dd>学习过程中的一些练习作品列表，包含静态页面及一些JavaScript效果实例</dd>
-						</dl>
-					</li>
 				</ul>
-			</section>
-			<section class="school-exp">
-				<h2>校园经历</h2>
-				<dl>
-					<dt>
-						院学生会权益保障部（干事）<time>2013.09~2014.07</time>
-					</dt>
-					<dd>在部门成员共同组织举办的权益大讲堂活动中，主要负责走访新生寝室、编写情景剧剧本并参演</dd>
-					<dd>主动承担失物招领联络机制的学院负责人，主要负责同学们拾物及遗失物的登记、匹配以及院权保部与校权保部的信息交换</dd>
-					<dd>德育实践项目《毕业季的爱心接力》实施者，项目实施中过程中与同事合作策划项目开展形式，走访100多间毕业生寝室与学长学姐交流，并将他们的经验、感受与建议整理总结上报学院</dd>
-					<dd>上述项目活动摆点时，吸引了1000余人次参与活动，该项目已成功申报为湖南省德育实践项目</dd>
-				</dl>
 			</section>
 		</article>
 	</div>
 	<aside class="side-links invisible-print">
         <ul>
             <li>
-                <a href="https://github.com/Cccshine//Resume" target="_blank">源代码</a>
+                <a href="https://github.com/Cccshine/Resume" target="_blank">源代码</a>
             </li>
             <li>
                 <a href="Web前端-湘潭大学-曹嘉聪.pdf" target="_blank">PDF 下载</a>
