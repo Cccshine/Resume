@@ -18,7 +18,13 @@
         width: @avatar-size;
         height: @avatar-size;
         margin: 0 auto @padding-large-vertical;
-        border-radius: @border-radius-circle;
+		border-radius: @border-radius-circle;
+		opacity: .8;
+		transition: all 1s ease;
+		&:hover{
+			opacity: 1;
+			transform: rotate(360deg);
+		}
     }
     h1{
     	margin-top: @padding-huge-vertical*1.5;

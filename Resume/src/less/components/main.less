@@ -12,6 +12,7 @@ section{
 		margin-bottom: @padding-base-vertical;
 	}
 	.info-list{
+		clear: both;
 		padding-left: @padding-base-horizontal + @font-size-huge;
 		margin-bottom: @padding-base-vertical;
 	}
@@ -26,6 +27,7 @@ section{
 	dd{
 		padding-top: @padding-base-vertical;
 		padding-bottom: @padding-base-vertical;
+		word-break: break-all;
 		clear:both;
 	}
 }
@@ -75,7 +77,7 @@ section{
     margin-top: ceil((@font-size-h4 - @font-size-h4*1.5)/2);
 }
 time{
-	padding-left: @padding-base-horizontal;
+	padding-left: @padding-base-horizontal + @font-size-huge;
 	float: right;
 	font-weight: 100;
 }
