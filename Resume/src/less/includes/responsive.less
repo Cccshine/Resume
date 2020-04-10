@@ -1,35 +1,40 @@
-.sidebar-lt-md(){
-  .side-bar{
+.sidebar-lt-md() {
+  .side-bar {
     height: auto;
     position: static;
 
-    .contact-info{
+    .contact-info {
       float: left;
       margin: 0;
     }
   }
-  .contact-info{
-     &::before{
-        display: none;
-      }
-      dt{
-        display: none;
-      }
-      dd{
-        padding: 0;
-      }
+
+  .contact-info {
+    &::before {
+      display: none;
+    }
+
+    dt {
+      display: none;
+    }
+
+    dd {
+      padding: 0;
+    }
   }
 }
-.side-links-lt-md(@size){
- .side-links{
+
+.side-links-lt-md(@size) {
+  .side-links {
     .horizontal-middle();
     top: 0;
     width: @size;
-    ul{
-      .float-container();
 
+    ul {
+      .float-container();
     }
-    li{
+
+    li {
       width: 50%;
       height: 30px;
       line-height: 30px;
@@ -40,62 +45,78 @@
     }
   }
 }
+
 //小于767px
-@media screen and (max-width: @screen-xs-max){
-  .container{
+@media screen and (max-width: @screen-xs-max) {
+  .container {
     margin-top: 0;
     padding: 0;
   }
+
   .sidebar-lt-md();
-  .side-ber .title{
+
+  .side-ber .title {
     float: none;
     margin: 0;
     text-align: center;
   }
-  .column{
-    padding:  @padding-gutter-width/2;
+
+  .column {
+    padding: @padding-gutter-width / 2;
   }
+
   .side-links-lt-md(100%);
-  .main time{
+
+  .main time {
     display: block;
     float: none;
   }
 }
+
 //大于768px小于991px
-@media screen and (min-width: @screen-sm-min) and (max-width:@screen-sm-max){
-  .container{
+@media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+  .container {
     width: @container-sm;
     padding: 0;
   }
+
   .sidebar-lt-md();
-  .side-bar .title{
-      float: right;
-      margin: 0;
-      text-align: right;
+
+  .side-bar .title {
+    float: right;
+    margin: 0;
+    text-align: right;
   }
+
   .side-links-lt-md(@container-sm);
 }
+
 //大于992px小于1200px
-@media screen and (min-width: @screen-md-min) and (max-width:@screen-md-max){
-  .container{
+@media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+  .container {
     width: @container-md;
   }
-   .side-bar{
+
+  .side-bar {
     width: 33%;
   }
-  .main{
+
+  .main {
     width: 67%;
   }
 }
+
 //大于1200px
 @media screen and (min-width: @screen-lg-min) {
-  .container{
+  .container {
     width: @container-lg;
   }
 }
+
 //小于992px
-@media screen and (max-width:@screen-md-min) {
-  .side-bar,.main{
+@media screen and (max-width: @screen-md-min) {
+  .side-bar,
+  .main {
     width: 100%;
     float: none;
   }
@@ -103,29 +124,32 @@
 
 .invisible-lt-md {
   //大于992px显示，小于991px不显示
-    @media screen and (min-width: @screen-md-min) {
-        display: block;
-    }
-    @media screen and (max-width: @screen-sm-max) {
-        display: none;
-    }
+  @media screen and (min-width: @screen-md-min) {
+    display: block;
+  }
+
+  @media screen and (max-width: @screen-sm-max) {
+    display: none;
+  }
 }
 
 .visible-lt-md {
   //大于992px不显示，小于991px显示
-    @media screen and (min-width: @screen-md-min) {
-        display: none;
-    }
-    @media screen and (max-width: @screen-sm-max) {
-        display: block;
-    }
+  @media screen and (min-width: @screen-md-min) {
+    display: none;
+  }
+
+  @media screen and (max-width: @screen-sm-max) {
+    display: block;
+  }
 }
 
 .visible-print {
   @media print {
     display: block;
   }
-  @media screen{
+
+  @media screen {
     display: none;
   }
 }
@@ -134,43 +158,60 @@
   @media print {
     display: none;
   }
-} 
+}
 
 @media print {
   .container {
     width: 1000px;
-    height: 1415px;
+    height: 1412px;
     margin-top: 0;
     box-shadow: none;
   }
+
   body {
     font-family: @font-family-print-text;
     background: transparent;
+    font-size: @font-size-base;
   }
-  h1,h2,h3,h4{
+
+  h1,
+  h2,
+  h3,
+  h4 {
     font-family: @font-family-print-title;
   }
-  #avatar{
+
+  #avatar {
     opacity: 1;
   }
-  section{
-    // margin-bottom: @padding-huge-vertical;
-    dt{
+
+  section {
+    h3 {
+      time .zh {
+        position: relative;
+        top: -2px;
+      }
+    }
+    dt {
       padding-bottom: @padding-base-vertical;
     }
-    dd{
+
+    dd {
       padding-top: @padding-small-vertical;
       padding-bottom: @padding-small-vertical;
     }
   }
-  .qrcode{
-    bottom:  @padding-gutter-width + @padding-huge-vertical;
+
+  .qrcode {
+    bottom: @padding-gutter-width + @padding-huge-vertical;
   }
-  .detail-link a{
-    &::before{
+
+  .detail-link a {
+    &::before {
       display: none;
     }
-    font-size: @font-size-h4;
+
+    font-size: @font-size-h5;
     border: none;
   }
 }

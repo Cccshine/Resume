@@ -1,87 +1,109 @@
-@font-face {font-family: "iconfont";
-  src: url('@{iconfont-path}/iconfont.eot?t=1473506816'); /* IE9*/
-  src: url('@{iconfont-path}/iconfont.eot?t=1473506816#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('@{iconfont-path}/iconfont.woff?t=1473506816') format('woff'), /* chrome, firefox */
-  url('@{iconfont-path}/iconfont.ttf?t=1473506816') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('@{iconfont-path}/iconfont.svg?t=1473506816#iconfont') format('svg'); /* iOS 4.1- */
-}
-  
+// @font-face {
+// 	font-family: "iconfont";
+// 	src        : url('@{iconfont-path}/iconfont.eot?t=1473506816');
+// 	/* IE9*/
+// 	src: url('@{iconfont-path}/iconfont.eot?t=1473506816#iefix') format('embedded-opentype'),
+// 	/* IE6-IE8 */
+// 	url('@{iconfont-path}/iconfont.woff?t=1473506816') format('woff'),
+// 	/* chrome, firefox */
+// 	url('@{iconfont-path}/iconfont.ttf?t=1473506816') format('truetype'),
+// 	/* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+// 	url('@{iconfont-path}/iconfont.svg?t=1473506816#iconfont') format('svg');
+// 	/* iOS 4.1- */
+// }
 
-.iconfont(){
-  font-family:"iconfont";
-  font-size:inherit;
-  font-style:normal;
+@font-face {
+  font-family: "iconfont";
+  /* project id 733597 */
+  src: url("//at.alicdn.com/t/font_733597_f57y4deh7d5.eot");
+  src: url("//at.alicdn.com/t/font_733597_f57y4deh7d5.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_733597_f57y4deh7d5.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_733597_f57y4deh7d5.woff") format("woff"),
+    url("//at.alicdn.com/t/font_733597_f57y4deh7d5.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_733597_f57y4deh7d5.svg#iconfont") format("svg");
+}
+
+.iconfont() {
+  font-family: "iconfont";
+  font-size: inherit;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon(@size, @foreground : white){
-	.iconfont();
-	float: left;
-	font-size: @size;
-	font-weight: 100;
-	color: @foreground;
+.icon(@size, @foreground : white) {
+  .iconfont();
+  float: left;
+  font-size: @size;
+  font-weight: 100;
+  color: @foreground;
 }
 
 //以下设置margin-top负值是为了让icon与字对齐
 
-.set-dt-icon(@dt-name,@content){
-	.@{dt-name}::before{
-		.icon(@font-size-large);
-		content: @content;
-		padding-right:  @padding-xs-horizontal;
-		margin-top: @font-size-h3 - @font-size-large;
-	}
-}
-.set-dd-icon(@dd-name,@content){
-	.@{dd-name}::before{
-		.icon(@font-size-medium);
-		content: @content;
-		padding-right:  @padding-small-horizontal;
-		margin-top: @font-size-base - @font-size-medium;
-	}
-}
-.set-timeline-item-icon(@content){
-	.timeline-item::before{
-		.icon(@font-size-medium,@theme-color);
-		content: @content;
-        margin-top: floor((@font-size-h4*1.5)/2) - @font-size-medium;
-        margin-left: -(@font-size-medium + @timeline-line-width)/2;
-	}
-}
-.set-title-icon(@section-name,@content){
-	.@{section-name} h2::before{
-		.icon(@font-size-huge,@theme-color);
-		content: @content;
-		padding-right:  @padding-base-horizontal;
-	}
+.set-dt-icon(@dt-name, @content) {
+  .@{dt-name}::before {
+    .icon(@font-size-large);
+    content: @content;
+    padding-right: @padding-xs-horizontal;
+    margin-top: @font-size-h3 - @font-size-large;
+  }
 }
 
-.set-sub-title-icon(@section-name,@content){
-	.@{section-name} h3::before{
-		.icon(@font-size-large,@theme-color);
-		content: @content;
-		padding-left:  @padding-small-horizontal;
-		padding-right:  @padding-large-horizontal;
-	}
+.set-dd-icon(@dd-name, @content) {
+  .@{dd-name}::before {
+    .icon(@font-size-medium);
+    content: @content;
+    padding-right: @padding-small-horizontal;
+    margin-top: @font-size-base - @font-size-medium;
+  }
 }
 
-.set-item-icon(@content){
-	.main dd{
-		padding-left: @padding-base-horizontal + @font-size-medium;
-	}
-	.main dd::before{
-		.icon(@font-size-medium,@theme-color);
-		content: @content;
-		margin-left: -@padding-base-horizontal - @font-size-medium;
-		margin-top: @font-size-base - @font-size-medium;
-	}
+.set-timeline-item-icon(@content) {
+  .timeline-item::before {
+    .icon(@font-size-medium, @theme-color);
+    content: @content;
+    margin-top: floor((@font-size-h4*1.5)/2) - @font-size-medium;
+    margin-left: -(@font-size-medium + @timeline-line-width)/2;
+  }
 }
+
+.set-title-icon(@section-name, @content) {
+  .@{section-name} h2::before {
+    .icon(@font-size-huge, @theme-color);
+    content: @content;
+    padding-right: @padding-base-horizontal;
+  }
+}
+
+.set-sub-title-icon(@section-name, @content) {
+  .@{section-name} h3::before {
+    .icon(@font-size-large, @theme-color);
+    content: @content;
+    padding-left: @padding-small-horizontal;
+    padding-right: @padding-large-horizontal;
+  }
+}
+
+.set-item-icon(@content) {
+  .main dd {
+    padding-left: @padding-base-horizontal + @font-size-medium2;
+  }
+
+  .main dd::before {
+    .icon(@font-size-medium2, @theme-color);
+    content: @content;
+    margin-left: -@padding-base-horizontal - @font-size-medium2;
+    margin-top: @font-size-base - @font-size-medium2;
+  }
+}
+
 .set-link-icon(@content) {
-    .detail-link a::before {
-        .icon(@font-size-small,@theme-color);
-        float: none;
-        content: @content;
-    }
+  .detail-link a::before {
+    .icon(@font-size-small, @theme-color);
+    float: none;
+    content: @content;
+  }
 }
