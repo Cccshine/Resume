@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Cccshine/Resume#readme",
   "devDependencies": {
     "browser-sync": "^2.24.5",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.4",
     "gulp-gh-pages": "^0.5.4",
